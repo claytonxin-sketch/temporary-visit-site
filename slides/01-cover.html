@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中东局势 2026.04-05 | 封面</title>
+  <link rel="stylesheet" href="../shared/tokens.css">
+  <style>
+    /* 封面专用样式 */
+    .cover-slide {
+      background: linear-gradient(135deg, #1A1F2E 0%, #2E3A59 50%, #1E2638 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* 地图轮廓背景装饰 */
+    .cover-slide::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 80%;
+      height: 140%;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cpath d='M400 100 Q500 150 550 250 Q600 350 550 450 Q500 550 400 500 Q300 550 250 450 Q200 350 250 250 Q300 150 400 100' fill='none' stroke='%23C65D3B' stroke-width='0.5' opacity='0.15'/%3E%3C/svg%3E") no-repeat center;
+      background-size: contain;
+      opacity: 0.3;
+      pointer-events: none;
+    }
+    
+    /* 渐变装饰条 */
+    .accent-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background: linear-gradient(90deg, #C65D3B 0%, #7D9B76 50%, #2E3A59 100%);
+    }
+    
+    .cover-content {
+      position: absolute;
+      top: 50%;
+      left: 80px;
+      right: 80px;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+    
+    .cover-meta {
+      font-size: 16px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 32px;
+    }
+    
+    .cover-title {
+      font-family: 'Noto Serif SC', Georgia, serif;
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 1.1;
+      color: #F5F3EF;
+      letter-spacing: -2px;
+      margin-bottom: 24px;
+    }
+    
+    .cover-title-accent {
+      color: #C65D3B;
+    }
+    
+    .cover-subtitle {
+      font-size: 28px;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 400;
+      margin-bottom: 64px;
+      max-width: 800px;
+      line-height: 1.5;
+    }
+    
+    .cover-date {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      font-family: 'SF Mono', monospace;
+      font-size: 20px;
+      color: #C65D3B;
+      padding: 16px 32px;
+      border: 2px solid #C65D3B;
+      border-radius: 4px;
+    }
+    
+    .cover-date::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: #C65D3B;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    
+    /* 底部信息 */
+    .cover-footer {
+      position: absolute;
+      bottom: 40px;
+      left: 80px;
+      right: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+    
+    .cover-style-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .cover-style-badge::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #7D9B76;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide cover-slide">
+    <div class="accent-bar"></div>
+    
+    <div class="cover-content">
+      <div class="cover-meta">Middle East Conflict Analysis</div>
+      <h1 class="cover-title">
+        中东局势<br>
+        <span class="cover-title-accent">冲突全景</span>
+      </h1>
+      <p class="cover-subtitle">
+        美伊霍尔木兹海峡对抗 · 以色列多线作战 · 全球能源冲击
+      </p>
+      <div class="cover-date">
+        2026.04.28 — 05.08
+      </div>
+    </div>
+    
+    <div class="cover-footer">
+      <div class="cover-style-badge">Stamen Design 数据诗学</div>
+      <div>7页演示文稿</div>
+    </div>
+  </div>
+</body>
+</html>

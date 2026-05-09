@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>总结 | 中东局势分析</title>
+  <link rel="stylesheet" href="../shared/tokens.css">
+  <style>
+    .conclusion-slide {
+      background: linear-gradient(135deg, #1A1F2E 0%, #2E3A59 50%, #1E2638 100%);
+      color: #F5F3EF;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .conclusion-slide::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background: linear-gradient(90deg, #C65D3B 0%, #7D9B76 50%, #2E3A59 100%);
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+      padding: 0 120px;
+    }
+
+    .conclusion-label {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 24px;
+    }
+
+    .conclusion-title {
+      font-family: 'Noto Serif SC', Georgia, serif;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 48px;
+    }
+
+    .conclusion-title span {
+      color: #C65D3B;
+    }
+
+    .key-points {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      width: 100%;
+      margin-bottom: 48px;
+    }
+
+    .key-point {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 28px;
+    }
+
+    .key-point-number {
+      font-family: 'Noto Serif SC', Georgia, serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: #C65D3B;
+      margin-bottom: 12px;
+    }
+
+    .key-point-label {
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.5;
+    }
+
+    .sources {
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.8;
+    }
+
+    .sources strong {
+      color: rgba(255,255,255,0.6);
+      font-weight: 500;
+    }
+
+    .page-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 80px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.4);
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="slide conclusion-slide">
+    <div class="content">
+      <div class="content-wrapper">
+        <div class="conclusion-label">Conclusion</div>
+        <h2 class="conclusion-title">
+          中东局势：<span>高度紧张</span>，<br>和平前景<span>严峻</span>
+        </h2>
+
+        <div class="key-points">
+          <div class="key-point">
+            <div class="key-point-number">4</div>
+            <div class="key-point-label">条战线同时升级<br>美伊、以黎、加沙、外交</div>
+          </div>
+          <div class="key-point">
+            <div class="key-point-number">90%</div>
+            <div class="key-point-label">霍尔木兹海峡<br>航运量暴跌</div>
+          </div>
+          <div class="key-point">
+            <div class="key-point-number">&lt;10%</div>
+            <div class="key-point-label">全面停火<br>可能性</div>
+          </div>
+        </div>
+
+        <div class="sources">
+          <strong>信息来源：</strong>今日头条、央视新闻、CGTN、以色列国防部、伊朗武装部队官方声明、美国中央司令部公告<br>
+          <strong>文档生成时间：</strong>2026年5月8日
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>中东局势分析 2026</span>
+      <span>07 / 07</span>
+    </div>
+  </div>
+</body>
+</html>

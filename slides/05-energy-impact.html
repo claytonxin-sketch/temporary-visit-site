@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>能源冲击 | 中东局势分析</title>
+  <link rel="stylesheet" href="../shared/tokens.css">
+  <style>
+    .energy-slide {
+      background: #1A1F2E;
+      color: #F5F3EF;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 48px;
+      height: 100%;
+    }
+
+    .left-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .section-title {
+      font-family: 'Noto Serif SC', Georgia, serif;
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 32px;
+    }
+
+    .impact-list {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .impact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .impact-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .impact-item:nth-child(1) .impact-icon { background: rgba(198, 93, 59, 0.15); }
+    .impact-item:nth-child(2) .impact-icon { background: rgba(199, 62, 62, 0.15); }
+    .impact-item:nth-child(3) .impact-icon { background: rgba(125, 155, 118, 0.15); }
+    .impact-item:nth-child(4) .impact-icon { background: rgba(46, 58, 89, 0.15); }
+
+    .impact-content h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .impact-content p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.5;
+    }
+
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .big-number-card {
+      background: rgba(198, 93, 59, 0.1);
+      border: 1px solid rgba(198, 93, 59, 0.25);
+      border-radius: 12px;
+      padding: 32px;
+      text-align: center;
+    }
+
+    .big-number-label {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 12px;
+    }
+
+    .big-number {
+      font-family: 'Noto Serif SC', Georgia, serif;
+      font-size: 80px;
+      font-weight: 700;
+      color: #C65D3B;
+      line-height: 1;
+    }
+
+    .big-number-unit {
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    .big-number-desc {
+      font-size: 15px;
+      color: rgba(255,255,255,0.7);
+      margin-top: 12px;
+    }
+
+    .price-chart {
+      background: rgba(255,255,255,0.04);
+      border-radius: 12px;
+      padding: 24px;
+      flex: 1;
+    }
+
+    .chart-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .price-bars {
+      display: flex;
+      align-items: flex-end;
+      gap: 24px;
+      height: 200px;
+      padding-bottom: 40px;
+      position: relative;
+    }
+
+    .price-bar {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .bar-fill {
+      width: 100%;
+      border-radius: 6px 6px 0 0;
+      position: relative;
+      transition: height 0.5s ease;
+    }
+
+    .bar-fill.current {
+      height: 60%;
+      background: #C65D3B;
+    }
+
+    .bar-fill.projected {
+      height: 85%;
+      background: #C73E3E;
+    }
+
+    .bar-value {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .bar-label {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .chart-note {
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .page-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 80px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.4);
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="slide energy-slide">
+    <div class="content">
+      <div class="kicker">Chapter 04 · Energy Impact</div>
+
+      <div class="content-grid">
+        <!-- 左侧影响列表 -->
+        <div class="left-section">
+          <h2 class="section-title">全球能源冲击</h2>
+          <p class="section-subtitle">霍尔木兹海峡承载全球约30%海运原油</p>
+
+          <div class="impact-list">
+            <div class="impact-item">
+              <div class="impact-icon">🚢</div>
+              <div class="impact-content">
+                <h3>航运危机</h3>
+                <p>海峡紧急禁航，油轮绕道非洲好望角，运费暴涨3倍。300余艘船只滞留，日均航运量不足10艘。</p>
+              </div>
+            </div>
+
+            <div class="impact-item">
+              <div class="impact-icon">📈</div>
+              <div class="impact-content">
+                <h3>油价飙升</h3>
+                <p>布伦特原油突破92美元/桶，若海峡完全封锁或飙升至150美元/桶以上。单日跳涨8%。</p>
+              </div>
+            </div>
+
+            <div class="impact-item">
+              <div class="impact-icon">🏭</div>
+              <div class="impact-content">
+                <h3>炼油停摆</h3>
+                <p>阿布扎比鲁韦斯炼厂因无人机袭击关闭，日均190万桶炼油能力停摆，供应进一步收紧。</p>
+              </div>
+            </div>
+
+            <div class="impact-item">
+              <div class="impact-icon">💱</div>
+              <div class="impact-content">
+                <h3>金融去美元化</h3>
+                <p>伊朗推动能源去美元化，与中俄开展本币结算，动摇石油美元根基。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右侧数据 -->
+        <div class="right-section">
+          <div class="big-number-card">
+            <div class="big-number-label">全球海运原油占比</div>
+            <div class="big-number">30<span class="big-number-unit">%</span></div>
+            <div class="big-number-desc">经霍尔木兹海峡运输</div>
+          </div>
+
+          <div class="price-chart">
+            <div class="chart-title">布伦特原油价格走势</div>
+            <div class="price-bars">
+              <div class="price-bar">
+                <div class="bar-value">$92</div>
+                <div class="bar-fill current"></div>
+                <div class="bar-label">冲突前</div>
+              </div>
+              <div class="price-bar">
+                <div class="bar-value" style="color: #C65D3B;">$108-112</div>
+                <div class="bar-fill" style="height: 70%; background: #C65D3B;"></div>
+                <div class="bar-label">当前</div>
+              </div>
+              <div class="price-bar">
+                <div class="bar-value" style="color: #C73E3E;">$150+</div>
+                <div class="bar-fill projected"></div>
+                <div class="bar-label">若海峡封锁</div>
+              </div>
+            </div>
+            <div class="chart-note">数据来源：国际能源署、布伦特原油期货市场</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>中东局势分析 2026</span>
+      <span>05 / 07</span>
+    </div>
+  </div>
+</body>
+</html>

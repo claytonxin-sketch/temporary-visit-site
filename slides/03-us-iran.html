@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>美伊冲突 | 中东局势分析</title>
+  <link rel="stylesheet" href="../shared/tokens.css">
+  <style>
+    .us-iran-slide {
+      background: #1A1F2E;
+      color: #F5F3EF;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 48px;
+      height: 100%;
+    }
+
+    .timeline-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .section-title {
+      font-family: 'Noto Serif SC', Georgia, serif;
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 32px;
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 28px;
+      flex: 1;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      bottom: 40px;
+      width: 2px;
+      background: linear-gradient(to bottom, #C65D3B, #7D9B76);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-bottom: 28px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -32px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #C65D3B;
+      border: 3px solid #1A1F2E;
+    }
+
+    .timeline-date {
+      font-family: 'SF Mono', monospace;
+      font-size: 14px;
+      color: #C65D3B;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .timeline-content {
+      font-size: 15px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .timeline-highlight {
+      color: #F5F3EF;
+      font-weight: 500;
+    }
+
+    .stats-section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .stat-block {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .stat-block.alert {
+      border-color: rgba(198, 93, 59, 0.3);
+      background: rgba(198, 93, 59, 0.08);
+    }
+
+    .stat-block-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 12px;
+    }
+
+    .stat-block-value {
+      font-family: 'Noto Serif SC', Georgia, serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: #C65D3B;
+      line-height: 1;
+    }
+
+    .stat-block-unit {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .stat-block-desc {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-top: 8px;
+    }
+
+    .mini-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .mini-stat {
+      text-align: center;
+      padding: 16px;
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 6px;
+    }
+
+    .mini-stat-value {
+      font-size: 28px;
+      font-weight: 700;
+      color: #F5F3EF;
+    }
+
+    .mini-stat-label {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 4px;
+    }
+
+    .page-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 80px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.4);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="slide us-iran-slide">
+    <div class="content">
+      <div class="kicker">Chapter 02 · US-Iran Conflict</div>
+      
+      <div class="content-grid">
+        <!-- 左侧时间线 -->
+        <div class="timeline-section">
+          <h2 class="section-title">美伊冲突时间线</h2>
+          <p class="section-subtitle">霍尔木兹海峡军事对抗升级全过程</p>
+          
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">5月4日</div>
+              <div class="timeline-content">
+                美国启动<span class="timeline-highlight">"自由计划"</span>护航行动，与伊朗爆发停火后最激烈海战。美军击沉<span class="timeline-highlight">7艘伊朗快艇</span>，击落多架无人机/导弹；伊朗向美军舰、商船及阿联酋发射导弹/无人机，富查伊拉油港起火。
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">5月5日</div>
+              <div class="timeline-content">
+                美国国务卿鲁比奥宣布<span class="timeline-highlight">"史诗怒火行动"结束</span>，但封锁持续、军力未撤。伊朗最高领袖顾问称仍处战争状态，<span class="timeline-highlight">不承认美方停火</span>。
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">5月6日</div>
+              <div class="timeline-content">
+                特朗普暂停"自由计划"，称谈判有重大进展。美军F/A-18战机在阿曼湾<span class="timeline-highlight">炸坏伊朗哈斯娜号油轮船舵</span>。伊朗击落2架美以无人机。
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">5月7日-8日</div>
+              <div class="timeline-content">
+                <span class="timeline-highlight">最激烈冲突</span>：美军空袭伊朗油轮与沿海民用区域；伊朗发射反舰导弹+无人机反击美军舰，宣称<span class="timeline-highlight">重创3艘宙斯盾驱逐舰</span>。霍尔木兹海峡航运瘫痪，油价单日跳涨8%。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右侧数据 -->
+        <div class="stats-section">
+          <div class="stat-block alert">
+            <div class="stat-block-title">航运影响</div>
+            <div class="stat-block-value">300<span class="stat-block-unit">+ 艘</span></div>
+            <div class="stat-block-desc">船只滞留霍尔木兹海峡，日均航运量不足10艘</div>
+          </div>
+
+          <div class="mini-stats">
+            <div class="mini-stat">
+              <div class="mini-stat-value">7</div>
+              <div class="mini-stat-label">伊朗快艇被击沉</div>
+            </div>
+            <div class="mini-stat">
+              <div class="mini-stat-value">2</div>
+              <div class="mini-stat-label">美以无人机被击落</div>
+            </div>
+            <div class="mini-stat">
+              <div class="mini-stat-value">3</div>
+              <div class="mini-stat-label">宙斯盾舰遭重创（伊方宣称）</div>
+            </div>
+            <div class="mini-stat">
+              <div class="mini-stat-value">8%</div>
+              <div class="mini-stat-label">油价单日跳涨</div>
+            </div>
+          </div>
+
+          <div class="stat-block">
+            <div class="stat-block-title">经济损失</div>
+            <div class="stat-block-value" style="color: #7D9B76;">60<span class="stat-block-unit">亿美元</span></div>
+            <div class="stat-block-desc">伊朗石油出口归零损失 + 美国250亿美元战争成本</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>中东局势分析 2026</span>
+      <span>03 / 07</span>
+    </div>
+  </div>
+</body>
+</html>

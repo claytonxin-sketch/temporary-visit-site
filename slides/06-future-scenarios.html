@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>未来情景 | 中东局势分析</title>
+  <link rel="stylesheet" href="../shared/tokens.css">
+  <style>
+    .future-slide {
+      background: #F5F3EF;
+    }
+
+    .top-accent {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, #C65D3B 0%, #7D9B76 50%, #2E3A59 100%);
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .header-section {
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      font-family: 'Noto Serif SC', Georgia, serif;
+      font-size: 40px;
+      font-weight: 600;
+      color: #2C2C2C;
+      margin-top: 12px;
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+      color: #6B6B6B;
+      margin-top: 8px;
+    }
+
+    .scenarios-list {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .scenario-item {
+      display: grid;
+      grid-template-columns: 200px 80px 1fr;
+      gap: 24px;
+      align-items: center;
+      background: white;
+      border-radius: 8px;
+      padding: 20px 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .scenario-name {
+      font-size: 18px;
+      font-weight: 600;
+      color: #2C2C2C;
+    }
+
+    .scenario-prob {
+      text-align: center;
+    }
+
+    .prob-badge {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: 'Noto Serif SC', Georgia, serif;
+    }
+
+    .prob-high {
+      background: rgba(198, 93, 59, 0.12);
+      color: #C65D3B;
+    }
+
+    .prob-medium {
+      background: rgba(125, 155, 118, 0.12);
+      color: #5F7A59;
+    }
+
+    .prob-low {
+      background: rgba(46, 58, 89, 0.12);
+      color: #2E3A59;
+    }
+
+    .prob-alert {
+      background: rgba(199, 62, 62, 0.12);
+      color: #C73E3E;
+    }
+
+    .scenario-desc {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .key-insight {
+      margin-top: 24px;
+      background: #1A1F2E;
+      border-radius: 8px;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .insight-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(198, 93, 59, 0.2);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    .insight-content h4 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 6px;
+    }
+
+    .insight-content p {
+      font-size: 16px;
+      color: #F5F3EF;
+      line-height: 1.5;
+    }
+
+    .page-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 80px;
+      font-size: 14px;
+      color: #6B6B6B;
+      border-top: 1px solid #D4D0C8;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide future-slide">
+    <div class="top-accent"></div>
+
+    <div class="content">
+      <div class="content-wrapper">
+        <div class="header-section">
+          <div class="kicker">Chapter 05 · Future Scenarios</div>
+          <h2 class="section-title">未来情景预测</h2>
+          <p class="section-subtitle">未来三个月是关键窗口期，全面停火可能性不足10%</p>
+        </div>
+
+        <div class="scenarios-list">
+          <div class="scenario-item">
+            <div class="scenario-name">长期消耗战</div>
+            <div class="scenario-prob">
+              <span class="prob-badge prob-high">50%</span>
+            </div>
+            <div class="scenario-desc">
+              美以无法推翻伊朗政权，但持续施压，中东陷入"冷和平、热冲突"泥潭。最可能情景。
+            </div>
+          </div>
+
+          <div class="scenario-item">
+            <div class="scenario-name">能源脱钩加速</div>
+            <div class="scenario-prob">
+              <span class="prob-badge prob-medium">30%</span>
+            </div>
+            <div class="scenario-desc">
+              全球能源格局重塑，多极化秩序加速成型。伊朗与中俄本币结算扩大，石油美元体系受冲击。
+            </div>
+          </div>
+
+          <div class="scenario-item">
+            <div class="scenario-name">全面战争</div>
+            <div class="scenario-prob">
+              <span class="prob-badge prob-alert">15%</span>
+            </div>
+            <div class="scenario-desc">
+              若误判导致核设施受损或海峡完全封锁，冲突可能升级为全面战争。风险不可忽视。
+            </div>
+          </div>
+
+          <div class="scenario-item">
+            <div class="scenario-name">大国协调停火</div>
+            <div class="scenario-prob">
+              <span class="prob-badge prob-low">5%</span>
+            </div>
+            <div class="scenario-desc">
+              唯一能暂时冻结冲突的途径，但需要中美俄等大国协调一致。当前外交僵局下概率极低。
+            </div>
+          </div>
+        </div>
+
+        <div class="key-insight">
+          <div class="insight-icon">⚠️</div>
+          <div class="insight-content">
+            <h4>关键判断</h4>
+            <p>短期内（未来3个月）局势难以缓和。长期消耗战是最可能路径，能源市场将持续承压，地缘政治风险溢价维持高位。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>中东局势分析 2026</span>
+      <span>06 / 07</span>
+    </div>
+  </div>
+</body>
+</html>

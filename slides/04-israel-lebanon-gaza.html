@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>以黎与加沙 | 中东局势分析</title>
+  <link rel="stylesheet" href="../shared/tokens.css">
+  <style>
+    .slide-content {
+      background: #F5F3EF;
+    }
+
+    .top-accent {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, #D4A843 0%, #2E3A59 50%, #C73E3E 100%);
+    }
+
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      height: 100%;
+    }
+
+    .section-block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .section-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .israel-section .section-dot { background: #D4A843; }
+    .gaza-section .section-dot { background: #2E3A59; }
+
+    .section-title {
+      font-family: 'Noto Serif SC', Georgia, serif;
+      font-size: 32px;
+      font-weight: 600;
+      color: #2C2C2C;
+    }
+
+    .event-list {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .event-item {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      border-left: 3px solid;
+    }
+
+    .israel-section .event-item { border-left-color: #D4A843; }
+    .gaza-section .event-item { border-left-color: #2E3A59; }
+
+    .event-date {
+      font-family: 'SF Mono', monospace;
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 6px;
+    }
+
+    .event-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #2C2C2C;
+      margin-bottom: 6px;
+    }
+
+    .event-desc {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .stat-mini {
+      background: #1A1F2E;
+      border-radius: 6px;
+      padding: 14px;
+      text-align: center;
+    }
+
+    .stat-mini-value {
+      font-size: 24px;
+      font-weight: 700;
+      color: #F5F3EF;
+    }
+
+    .stat-mini-label {
+      font-size: 11px;
+      color: rgba(255,255,255,0.5);
+      margin-top: 4px;
+    }
+
+    .page-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 80px;
+      font-size: 14px;
+      color: #6B6B6B;
+      border-top: 1px solid #D4D0C8;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide slide-content">
+    <div class="top-accent"></div>
+
+    <div class="content">
+      <div class="kicker">Chapter 03 · Israel-Lebanon & Gaza</div>
+
+      <div class="main-grid">
+        <!-- 以黎冲突 -->
+        <div class="section-block israel-section">
+          <div class="section-header">
+            <div class="section-dot"></div>
+            <h2 class="section-title">以色列-黎巴嫩冲突</h2>
+          </div>
+
+          <div class="event-list">
+            <div class="event-item">
+              <div class="event-date">5月2日</div>
+              <div class="event-title">新一轮空袭启动</div>
+              <div class="event-desc">距上一轮停火协议签署仅过去9天，以色列发动新一轮空袭，黎巴嫩多地遭袭</div>
+            </div>
+
+            <div class="event-item">
+              <div class="event-date">5月3日</div>
+              <div class="event-title">边境冲突持续</div>
+              <div class="event-desc">以色列与黎巴嫩真主党、也门胡塞武装交火持续，本土安全警报频繁响起</div>
+            </div>
+
+            <div class="event-item">
+              <div class="event-date">5月6日</div>
+              <div class="event-title">贝鲁特遭空袭</div>
+              <div class="event-desc">以色列空袭黎巴嫩首都贝鲁特，打死真主党精锐部队拉德万部队指挥官</div>
+            </div>
+
+            <div class="event-item">
+              <div class="event-date">5月7日</div>
+              <div class="event-title">全国紧急状态延长</div>
+              <div class="event-desc">以色列提升警戒状态，应对真主党报复性攻击，全国紧急状态延长至5月19日</div>
+            </div>
+          </div>
+
+          <div class="stats-row">
+            <div class="stat-mini">
+              <div class="stat-mini-value">9天</div>
+              <div class="stat-mini-label">停火维持</div>
+            </div>
+            <div class="stat-mini">
+              <div class="stat-mini-value">4条</div>
+              <div class="stat-mini-label">作战方向</div>
+            </div>
+            <div class="stat-mini">
+              <div class="stat-mini-value">70%</div>
+              <div class="stat-mini-label">伊朗军工被毁</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 加沙地带 -->
+        <div class="section-block gaza-section">
+          <div class="section-header">
+            <div class="section-dot"></div>
+            <h2 class="section-title">加沙地带人道危机</h2>
+          </div>
+
+          <div class="event-list">
+            <div class="event-item">
+              <div class="event-date">持续状态</div>
+              <div class="event-title">名义停火，实质冲突</div>
+              <div class="event-desc">2025年10月名义上停火，但敌对行动实质未止，冲突持续不断</div>
+            </div>
+
+            <div class="event-item">
+              <div class="event-date">人道援助</div>
+              <div class="event-title">援助船队被拦截</div>
+              <div class="event-desc">以色列拦截前往加沙地带的人道援助船队，人道物资难以进入</div>
+            </div>
+
+            <div class="event-item">
+              <div class="event-date">教育危机</div>
+              <div class="event-title">1亿+儿童教育中断</div>
+              <div class="event-desc">冲突已导致阿拉伯国家超过1亿儿童教育中断，影响深远</div>
+            </div>
+
+            <div class="event-item">
+              <div class="event-date">国际评估</div>
+              <div class="event-title">灾难性人道危机</div>
+              <div class="event-desc">人道主义危机被国际组织称为"灾难性"，急需国际干预</div>
+            </div>
+          </div>
+
+          <div class="stats-row">
+            <div class="stat-mini">
+              <div class="stat-mini-value">1亿+</div>
+              <div class="stat-mini-label">儿童失学</div>
+            </div>
+            <div class="stat-mini">
+              <div class="stat-mini-value">灾难</div>
+              <div class="stat-mini-label">危机等级</div>
+            </div>
+            <div class="stat-mini">
+              <div class="stat-mini-value">持续</div>
+              <div class="stat-mini-label">援助受阻</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>中东局势分析 2026</span>
+      <span>04 / 07</span>
+    </div>
+  </div>
+</body>
+</html>
