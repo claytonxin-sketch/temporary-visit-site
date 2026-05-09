@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>中东局势 2026.04-05 | 封面</title>
   <link rel="stylesheet" href="../shared/tokens.css">
+  <style>body { overflow: hidden; }</style>
   <style>
     /* 封面专用样式 */
     .cover-slide {
@@ -129,6 +130,41 @@
       background: #7D9B76;
       border-radius: 50%;
     }
+  
+    /* === 翻页导航按钮 === */
+    .slide-nav {
+      position: fixed;
+      bottom: 20px;
+      z-index: 9999;
+      display: flex;
+      gap: 12px;
+    }
+    .slide-nav-left { left: 20px; }
+    .slide-nav-right { right: 20px; }
+    .slide-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 20px;
+      background: rgba(0, 0, 0, 0.45);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: background 0.2s, transform 0.15s;
+      user-select: none;
+    }
+    .slide-nav a:hover {
+      background: rgba(0, 0, 0, 0.65);
+      transform: translateY(-1px);
+    }
+    .slide-nav a:active {
+      transform: translateY(0);
+    }
+
   </style>
 </head>
 <body>
@@ -154,5 +190,28 @@
       <div>7页演示文稿</div>
     </div>
   </div>
+
+    <div class="slide-nav slide-nav-left" style="visibility:hidden;"><a href="#">&larr; </a></div>
+    <div class="slide-nav slide-nav-right"><a href="02-overview.html">局势总览 &rarr;</a></div>
+
+
+    <script>
+    (function() {
+      function scaleSlide() {
+        var slide = document.querySelector('.slide');
+        if (!slide) return;
+        var scaleX = window.innerWidth / 1920;
+        var scaleY = window.innerHeight / 1080;
+        var ratio = Math.min(scaleX, scaleY);
+        slide.style.transform = 'scale(' + ratio + ')';
+        slide.style.transformOrigin = 'top left';
+        slide.style.marginLeft = ((window.innerWidth - 1920 * ratio) / 2) + 'px';
+        slide.style.marginTop = ((window.innerHeight - 1080 * ratio) / 2) + 'px';
+      }
+      scaleSlide();
+      window.addEventListener('resize', scaleSlide);
+    })();
+    </script>
+
 </body>
 </html>
