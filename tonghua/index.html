@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>通化市旅行研究 | 高句丽文化遗产</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background: #F4F8F6;
+      color: #2D2926;
+      min-height: 100vh;
+    }
+
+    .header {
+      padding: 24px 40px;
+      background: #2D6A4F;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Noto Serif SC', Georgia, serif;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .meta {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .main {
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .title-section {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .title-section h1 {
+      font-family: 'Noto Serif SC', Georgia, serif;
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #2D6A4F;
+    }
+
+    .title-section p {
+      font-size: 18px;
+      color: #6E6E73;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 32px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: 1px solid #E5E5EA;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+      border-color: #2D6A4F;
+    }
+
+    .card-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    .card-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #2D2926;
+    }
+
+    .card-desc {
+      font-size: 15px;
+      color: #6E6E73;
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .card-meta {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid #E5E5EA;
+      font-size: 13px;
+      color: #ACACB0;
+    }
+
+    .highlights {
+      background: white;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 32px;
+      border: 1px solid #E5E5EA;
+    }
+
+    .highlights h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #2D6A4F;
+    }
+
+    .highlight-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .highlight-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .highlight-badge {
+      background: #2D6A4F;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .highlight-text {
+      font-size: 15px;
+      color: #2D2926;
+      line-height: 1.5;
+    }
+
+    .footer {
+      padding: 24px 40px;
+      text-align: center;
+      font-size: 13px;
+      color: #ACACB0;
+      border-top: 1px solid #E5E5EA;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        padding: 20px 24px;
+      }
+
+      .main {
+        padding: 24px;
+      }
+
+      .title-section h1 {
+        font-size: 28px;
+      }
+
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🏛️ 通化旅行研究</div>
+    <div class="meta">ljg-travel 生成</div>
+  </header>
+
+  <main class="main">
+    <div class="title-section">
+      <h1>吉林省通化市</h1>
+      <p>东北亚古代文明核心区 · 高句丽425年都城 · 中国东北唯一世界文化遗产</p>
+    </div>
+
+    <div class="cards-grid">
+      <a href="overview.html" class="card">
+        <div class="card-icon">🗺️</div>
+        <div class="card-title">文明概览</div>
+        <div class="card-desc">历史分层、核心博物馆、必看古建遗存一览。从汉代玄菟郡到高句丽都城，6000年文明史浓缩。</div>
+        <div class="card-meta">信息图卡片 · 适合快速了解</div>
+      </a>
+
+      <a href="routes.html" class="card">
+        <div class="card-icon">🚶</div>
+        <div class="card-title">参观路线</div>
+        <div class="card-desc">4条精心规划的参观路线：高句丽核心遗址、壁画墓深度游、红色文化之旅、通化市区游。</div>
+        <div class="card-meta">路线速查 · 手机随时查看</div>
+      </a>
+
+      <a href="heritage.html" class="card">
+        <div class="card-icon">🏺</div>
+        <div class="card-title">世遗详解</div>
+        <div class="card-desc">将军坟、好太王碑、丸都山城、洞沟古墓群。世界文化遗产的详细看点与历史背景。</div>
+        <div class="card-meta">深度解读 · 行前必读</div>
+      </a>
+
+      <a href="museum.html" class="card">
+        <div class="card-icon">🎫</div>
+        <div class="card-title">博物馆指南</div>
+        <div class="card-desc">集安市博物馆镇馆之宝、通化市博物馆、杨靖宇烈士陵园。馆藏精品与参观贴士。</div>
+        <div class="card-meta">实用信息 · 门票开放时间</div>
+      </a>
+    </div>
+
+    <div class="highlights">
+      <h2>核心亮点</h2>
+      <div class="highlight-list">
+        <div class="highlight-item">
+          <span class="highlight-badge">世遗</span>
+          <span class="highlight-text">高句丽王城、王陵及贵族墓葬（2004年列入）</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-badge">王陵</span>
+          <span class="highlight-text">将军坟 — "东方金字塔"，方坛阶梯式石构建筑</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-badge">碑刻</span>
+          <span class="highlight-text">好太王碑 — "海东第一碑"，1775字隶书</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-badge">壁画</span>
+          <span class="highlight-text">五盔坟四神图、伏羲女娲交尾图</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-badge">山城</span>
+          <span class="highlight-text">丸都山城 — "筑断为城"典型作品</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-badge">红色</span>
+          <span class="highlight-text">杨靖宇烈士陵园 — 东北抗联精神发源地</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    基于 ljg-travel 旅行研究工作流生成 | 研究日期：2026年5月10日
+  </footer>
+</body>
+</html>

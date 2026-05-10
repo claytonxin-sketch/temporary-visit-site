@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>通化参观路线 | 高句丽文化遗产</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'PingFang SC', -apple-system, sans-serif;
+      background: #FAF8F4;
+      color: #1D1D1F;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    h1 {
+      font-family: 'Noto Serif SC', Georgia, serif;
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #1D1D1F;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #6E6E73;
+    }
+
+    .route {
+      background: white;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 24px;
+      border-left: 5px solid #7C6853;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .route-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .route-title {
+      font-size: 22px;
+      font-weight: 600;
+      color: #1D1D1F;
+    }
+
+    .route-time {
+      font-size: 14px;
+      font-weight: 500;
+      color: #7C6853;
+      background: rgba(124,104,83,0.1);
+      padding: 6px 12px;
+      border-radius: 20px;
+    }
+
+    .route-for {
+      font-size: 14px;
+      color: #6E6E73;
+      margin-bottom: 20px;
+    }
+
+    .stops {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .stop {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .stop-num {
+      width: 36px;
+      height: 36px;
+      background: #7C6853;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .stop-content {
+      flex: 1;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #F0F0F0;
+    }
+
+    .stop:last-child .stop-content {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .stop-name {
+      font-size: 17px;
+      font-weight: 600;
+      color: #1D1D1F;
+      margin-bottom: 4px;
+    }
+
+    .stop-highlight {
+      font-size: 14px;
+      color: #6E6E73;
+      margin-bottom: 4px;
+    }
+
+    .stop-duration {
+      font-size: 13px;
+      color: #7C6853;
+      font-weight: 500;
+    }
+
+    .tips-box {
+      background: #F5F2ED;
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 32px;
+    }
+
+    .tips-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1D1D1F;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .tips-list {
+      list-style: none;
+    }
+
+    .tips-list li {
+      font-size: 15px;
+      color: #6E6E73;
+      padding: 10px 0;
+      padding-left: 28px;
+      position: relative;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .tips-list li:last-child {
+      border-bottom: none;
+    }
+
+    .tips-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #7C6853;
+      font-weight: 600;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid #E5E5EA;
+    }
+
+    .nav a {
+      color: #7C6853;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 12px 24px;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+
+    .nav a:hover {
+      background: rgba(124,104,83,0.1);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: #ACACB0;
+      margin-top: 32px;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 32px; }
+      .route { padding: 20px; }
+      .route-header { flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>通化参观路线</h1>
+      <p class="subtitle">4条精心规划的路线，深度体验高句丽文化遗产</p>
+    </div>
+
+    <div class="route">
+      <div class="route-header">
+        <div class="route-title">路线一：高句丽核心遗址</div>
+        <div class="route-time">1天</div>
+      </div>
+      <div class="route-for">适合：首次到访，想系统了解高句丽文化</div>
+      <div class="stops">
+        <div class="stop">
+          <div class="stop-num">1</div>
+          <div class="stop-content">
+            <div class="stop-name">集安市博物馆</div>
+            <div class="stop-highlight">系统了解高句丽历史文化</div>
+            <div class="stop-duration">停留 2小时</div>
+          </div>
+        </div>
+        <div class="stop">
+          <div class="stop-num">2</div>
+          <div class="stop-content">
+            <div class="stop-name">好太王碑 · 太王陵</div>
+            <div class="stop-highlight">"海东第一碑"，好太王陵墓</div>
+            <div class="stop-duration">停留 1小时</div>
+          </div>
+        </div>
+        <div class="stop">
+          <div class="stop-num">3</div>
+          <div class="stop-content">
+            <div class="stop-name">将军坟</div>
+            <div class="stop-highlight">"东方金字塔"，方坛阶梯式石构建筑</div>
+            <div class="stop-duration">停留 1小时</div>
+          </div>
+        </div>
+        <div class="stop">
+          <div class="stop-num">4</div>
+          <div class="stop-content">
+            <div class="stop-name">丸都山城</div>
+            <div class="stop-highlight">山城遗址，俯瞰集安全景</div>
+            <div class="stop-duration">停留 2小时</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="route">
+      <div class="route-header">
+        <div class="route-title">路线二：壁画墓深度游</div>
+        <div class="route-time">半天</div>
+      </div>
+      <div class="route-for">适合：对古代艺术感兴趣</div>
+      <div class="stops">
+        <div class="stop">
+          <div class="stop-num">1</div>
+          <div class="stop-content">
+            <div class="stop-name">五盔坟4号墓</div>
+            <div class="stop-highlight">四神图、伏羲女娲交尾图</div>
+            <div class="stop-duration">停留 1小时</div>
+          </div>
+        </div>
+        <div class="stop">
+          <div class="stop-num">2</div>
+          <div class="stop-content">
+            <div class="stop-name">五盔坟5号墓</div>
+            <div class="stop-highlight">与4号墓对比，曲技忍冬莲花纹</div>
+            <div class="stop-duration">停留 1小时</div>
+          </div>
+        </div>
+        <div class="stop">
+          <div class="stop-num">3</div>
+          <div class="stop-content">
+            <div class="stop-name">角抵墓</div>
+            <div class="stop-highlight">角抵（摔跤）图，体育史重要资料</div>
+            <div class="stop-duration">停留 30分钟</div>
+          </div>
+        </div>
+        <div class="stop">
+          <div class="stop-num">4</div>
+          <div class="stop-content">
+            <div class="stop-name">舞踊墓</div>
+            <div class="stop-highlight">舞蹈、吹角、乐舞场面</div>
+            <div class="stop-duration">停留 30分钟</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="route">
+      <div class="route-header">
+        <div class="route-title">路线三：红色文化之旅</div>
+        <div class="route-time">半天</div>
+      </div>
+      <div class="route-for">适合：对抗日历史感兴趣</div>
+      <div class="stops">
+        <div class="stop">
+          <div class="stop-num">1</div>
+          <div class="stop-content">
+            <div class="stop-name">杨靖宇烈士陵园</div>
+            <div class="stop-highlight">靖宇将军墓、纪念馆，尘封85年档案</div>
+            <div class="stop-duration">停留 2小时</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="route">
+      <div class="route-header">
+        <div class="route-title">路线四：通化市区文化游</div>
+        <div class="route-time">半天</div>
+      </div>
+      <div class="route-for">适合：时间有限，在通化市区游览</div>
+      <div class="stops">
+        <div class="stop">
+          <div class="stop-num">1</div>
+          <div class="stop-content">
+            <div class="stop-name">通化市博物馆</div>
+            <div class="stop-highlight">通化6000年历史</div>
+            <div class="stop-duration">停留 1.5小时</div>
+          </div>
+        </div>
+        <div class="stop">
+          <div class="stop-num">2</div>
+          <div class="stop-content">
+            <div class="stop-name">玉皇阁</div>
+            <div class="stop-highlight">清代道教建筑</div>
+            <div class="stop-duration">停留 1小时</div>
+          </div>
+        </div>
+        <div class="stop">
+          <div class="stop-num">3</div>
+          <div class="stop-content">
+            <div class="stop-name">万发拨子遗址</div>
+            <div class="stop-highlight">1999年全国十大考古新发现（如开放）</div>
+            <div class="stop-duration">停留 1小时</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tips-box">
+      <div class="tips-title">💡 实用提示</div>
+      <ul class="tips-list">
+        <li>集安距通化市区约100公里，车程约1.5小时</li>
+        <li>建议自驾或包车，各遗址间距离较远</li>
+        <li>壁画墓内部光线较暗，部分禁止拍照</li>
+        <li>山城遗址需爬山，建议穿舒适的鞋子</li>
+        <li>最佳季节：春季4-5月、秋季9-10月</li>
+      </ul>
+    </div>
+
+    <div class="nav">
+      <a href="index.html">← 返回首页</a>
+      <a href="overview.html">文明概览 →</a>
+    </div>
+
+    <div class="footer">
+      ljg-travel 生成 | 研究日期：2026年5月10日
+    </div>
+  </div>
+</body>
+</html>

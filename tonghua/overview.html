@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>通化文明概览 | 高句丽文化遗产</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', 'PingFang SC', -apple-system, sans-serif;
+      background: #F4F8F6;
+      color: #2D2926;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .ref-code {
+      font-family: 'SF Mono', monospace;
+      font-size: 14px;
+      color: #6E6E73;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', 'Noto Serif SC', serif;
+      font-size: 64px;
+      font-weight: 700;
+      color: #2D2926;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #6E6E73;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .section {
+      margin-bottom: 48px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #2D6A4F;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #2D6A4F;
+      display: inline-block;
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .era {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      border-left: 4px solid #C4B5A0;
+    }
+
+    .era.highlight {
+      background: #2D6A4F;
+      color: white;
+      border-left-color: #D68C45;
+    }
+
+    .era-date {
+      font-family: 'SF Mono', monospace;
+      font-size: 14px;
+      font-weight: 500;
+      color: #D68C45;
+      min-width: 140px;
+    }
+
+    .era.highlight .era-date {
+      color: #FFD700;
+    }
+
+    .era-content h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .era-content p {
+      font-size: 15px;
+      opacity: 0.8;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 8px;
+      border-left: 4px solid #2D6A4F;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #2D2926;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #6E6E73;
+    }
+
+    .heritage-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .heritage-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 20px;
+      background: white;
+      border-radius: 8px;
+    }
+
+    .heritage-badge {
+      font-size: 12px;
+      font-weight: 600;
+      color: white;
+      background: #D68C45;
+      padding: 6px 12px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .heritage-name {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .world-heritage {
+      background: linear-gradient(135deg, #2D6A4F 0%, #1a4a35 100%);
+      color: white;
+      padding: 24px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .world-heritage h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .world-heritage p {
+      opacity: 0.9;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #E5E5EA;
+    }
+
+    .nav a {
+      color: #2D6A4F;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 12px 24px;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .nav a:hover {
+      background: rgba(45, 106, 79, 0.1);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: #ACACB0;
+      margin-top: 48px;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 42px; }
+      .era { flex-direction: column; gap: 8px; }
+      .era-date { min-width: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="ref-code">REF—旅行 / 通化</div>
+      <h1>通化</h1>
+      <p class="subtitle">东北亚古代文明核心区 · 高句丽425年都城 · 中国东北唯一世界文化遗产</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">历史分层</div>
+      <div class="timeline">
+        <div class="era">
+          <div class="era-date">公元前108-220</div>
+          <div class="era-content">
+            <h3>汉代 · 玄菟郡</h3>
+            <p>赤柏松古城遗址，出土绳纹板瓦、铁器</p>
+          </div>
+        </div>
+        <div class="era highlight">
+          <div class="era-date">公元前37-668</div>
+          <div class="era-content">
+            <h3>高句丽时期 · 核心历史</h3>
+            <p>公元3年迁都集安，425年都城史，双城制格局，洞沟古墓群11,300余座</p>
+          </div>
+        </div>
+        <div class="era">
+          <div class="era-date">698-926</div>
+          <div class="era-content">
+            <h3>渤海国 · 西京鸭绿府</h3>
+            <p>万发拨子遗址出土渤海时期遗存</p>
+          </div>
+        </div>
+        <div class="era">
+          <div class="era-date">1877</div>
+          <div class="era-content">
+            <h3>清代 · 柳条边外</h3>
+            <p>玉皇阁始建，吉林省道教祖庭</p>
+          </div>
+        </div>
+        <div class="era">
+          <div class="era-date">1931-1945</div>
+          <div class="era-content">
+            <h3>抗日战争 · 抗联精神</h3>
+            <p>杨靖宇将军战斗牺牲地，东北抗联发源地</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">核心博物馆</div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>集安市博物馆</h3>
+          <p>全球唯一高句丽专题博物馆<br>鎏金马镫、金印、铭文砖</p>
+        </div>
+        <div class="card">
+          <h3>通化市博物馆</h3>
+          <p>6000年文化历史<br>馆藏文物6000件</p>
+        </div>
+        <div class="card">
+          <h3>杨靖宇烈士陵园</h3>
+          <p>东北抗联精神发源地<br>尘封85年档案首次公布</p>
+        </div>
+        <div class="card">
+          <h3>万发拨子遗址</h3>
+          <p>1999年全国十大考古新发现<br>省级考古遗址公园</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">必看古建遗存</div>
+      <div class="world-heritage">
+        <h3>世界文化遗产</h3>
+        <p>高句丽王城、王陵及贵族墓葬（2004年列入）</p>
+      </div>
+      <div class="heritage-list">
+        <div class="heritage-item">
+          <span class="heritage-badge">王陵</span>
+          <span class="heritage-name">将军坟 · 东方金字塔</span>
+        </div>
+        <div class="heritage-item">
+          <span class="heritage-badge">碑刻</span>
+          <span class="heritage-name">好太王碑 · 海东第一碑</span>
+        </div>
+        <div class="heritage-item">
+          <span class="heritage-badge">山城</span>
+          <span class="heritage-name">丸都山城 · 筑断为城</span>
+        </div>
+        <div class="heritage-item">
+          <span class="heritage-badge">壁画</span>
+          <span class="heritage-name">五盔坟 · 四神图</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav">
+      <a href="index.html">← 返回首页</a>
+      <a href="routes.html">参观路线 →</a>
+    </div>
+
+    <div class="footer">
+      ljg-travel 生成 | 研究日期：2026年5月10日
+    </div>
+  </div>
+</body>
+</html>
